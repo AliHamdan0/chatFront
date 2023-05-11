@@ -6,7 +6,7 @@ export default function Chatprovider({ children }) {
   const [socket, setSocket] = useState();
 
   const connect = () => {
-    let socketValue = io('http://127.0.0.1:5000');
+    let socketValue = io('https://node-chat-8ya0.onrender.com/');
     socketValue.on('connect', () => {
       console.log('connected Successfully');
       setSocket(socketValue);
