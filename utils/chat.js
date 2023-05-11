@@ -6,7 +6,7 @@ export default function Chatprovider({ children }) {
   const [socket, setSocket] = useState();
 
   const connect = () => {
-    let socketValue = io('https://node-chat-8ya0.onrender.com/');
+    let socketValue = io('https://sleepy-circular-prepared.glitch.me');
     socketValue.on('connect', () => {
       console.log('connected Successfully');
       setSocket(socketValue);
